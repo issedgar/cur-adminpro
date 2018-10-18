@@ -11,6 +11,9 @@ import { APP_ROUTES } from './app.routes';
 
 // modules
 import { PageModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module';
+
+
 
 @NgModule({
   declarations: [
@@ -22,9 +25,10 @@ import { PageModule } from './pages/pages.module';
     BrowserModule,
     PageModule,
     APP_ROUTES,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [ ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
